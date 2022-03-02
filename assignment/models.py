@@ -8,6 +8,8 @@ class Kid(models.Model):
     age = models.IntegerField("Kid Age")
     phone = models.CharField("Parent Phone Number", max_length=12)
     email = models.EmailField("Parent Email Address")
+    def __str__(self):
+        return self.name
 
 
 class Image(models.Model):
@@ -52,3 +54,5 @@ class Image(models.Model):
                 [self.kid.email],
                 fail_silently=False,
             )
+        def __str__(self):
+            return self.food_group
