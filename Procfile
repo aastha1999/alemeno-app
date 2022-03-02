@@ -1,0 +1,1 @@
+web: gunicorn alemenoapp.wsgi --log-file -
