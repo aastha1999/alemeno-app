@@ -54,5 +54,5 @@ class Image(models.Model):
                 [self.kid.email],
                 fail_silently=False,
             )
-        def __str__(self):
-            return self.food_group
+    def __str__(self):
+        return self.food_group
