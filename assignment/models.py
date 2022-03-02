@@ -34,7 +34,7 @@ class Image(models.Model):
         on_delete=models.CASCADE,
     )
     url = models.URLField("Image URL")
-    created_on = models.DateTimeField("Created On")
+    created_on = models.DateTimeField("Created On", auto_now_add=True)
     updated_on = models.DateTimeField("Updated On", auto_now=True)
     is_approved = models.BooleanField("Is Approved")
     approved_by = models.CharField("Approved by", max_length=20)
