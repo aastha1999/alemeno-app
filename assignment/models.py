@@ -55,4 +55,4 @@ class Image(models.Model):
                 fail_silently=False,
             )
     def __str__(self):
-        return self.food_group
+        return f"{self.kid.name}-{self.FOOD_CHOICES[(int(self.food_group))-1][1]}"
